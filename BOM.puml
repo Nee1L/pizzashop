@@ -21,22 +21,22 @@ measure:string
 }
 class Product{
 name:string
-price:Price
-productInfo:ProductInfo
 quantity:int
 }
 class Pizza{
 name:string
-products:Product[]
 description:string
 }
 class SupplyItem{
-products:Product[]
 date:Date
 }
 class Supplier{
 name:string
 phoneNumber:string
-supplyItem:SupplyItem
 }
+Product "n"--o "1" Pizza
+ProductInfo --o Product
+Price --o Product
+SupplyItem --o Supplier
+Product "n"--o "1" SupplyItem
 @enduml
