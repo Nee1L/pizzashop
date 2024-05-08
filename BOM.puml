@@ -1,0 +1,42 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Customer{
+name:string
+password:string
+role:string[]
+}
+class Admin{
+name:string
+password:string
+role:string[]
+}
+class Price{
+value:double
+currency:string
+}
+class ProductInfo{
+quantity:int
+measure:string
+}
+class Product{
+name:string
+price:Price
+productInfo:ProductInfo
+quantity:int
+}
+class Pizza{
+name:string
+products:Product[]
+description:string
+}
+class SupplyItem{
+products:Product[]
+date:Date
+}
+class Supplier{
+name:string
+phoneNumber:string
+supplyItem:SupplyItem
+}
+@enduml
