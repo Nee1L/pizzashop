@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  pizza-shop:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: pizza-shop-client
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: psw
+    ports:
+      - "7433:5432"

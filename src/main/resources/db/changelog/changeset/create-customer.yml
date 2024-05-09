@@ -1,0 +1,34 @@
+databaseChangeLog:
+  - changeSet:
+      id: create_customer_table
+      author: mykytaK
+      changes:
+        - createTable:
+            tableName: MYCUSTOMER
+            columns:
+              - column:
+                  name: ID
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: PK_USER
+              - column:
+                  name: EMAIL
+                  type: VARCHAR(50)
+                  constraints:
+                    unique: false
+                    nullable: false
+              - column:
+                  name: PASSWORD
+                  type: VARCHAR(400)
+                  constraints:
+                    unique: false
+                    nullable: false
+              - column:
+                  name: USERNAME
+                  type: VARCHAR(40)
+                  constraints:
+                    unique: false
+                    nullable: false
