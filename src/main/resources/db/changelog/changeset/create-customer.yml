@@ -4,7 +4,7 @@ databaseChangeLog:
       author: mykytaK
       changes:
         - createTable:
-            tableName: MYCUSTOMER
+            tableName: CUSTOMER
             columns:
               - column:
                   name: ID

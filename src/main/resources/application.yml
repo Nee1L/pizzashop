@@ -12,3 +12,4 @@ spring:
         format_sql: true
   liquibase:
     change-log: classpath:db/changelog/changelog-pizza-shop-client.yml
+expirationTimeMs: 60000
